@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./P1Login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main class="container forms">
+      <!-- Login Form en -->
+
+      <div class="form login en" id="loginEn" >
+        <div class="form-Content">
+          <header id="loginHeader">Login</header>
+          <div class="change-lang">
+            <img src="./israel.png" alt="langChange" class="israel-img lang" id="langChangeP" />
+            <span class="lang" id="langChange">עברית</span>
+          </div>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="text"
+                name="userName"
+                class="userName"
+                placeholder="User Name"
+                required
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="password"
+                required
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <div class="formLink">
+              <a href="#" class="forgotPassword">Forgot Password?</a>
+            </div>
+            <div class="field button-field">
+              <button id="loginBtnEn">Login</button>
+            </div>
+          </form>
+          <div class="formLink">
+            <span id="ifNotReg">
+              Don't have an Account?
+                <a href="#" class="link signUpLink">Signup</a>
+            </span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="social-icons">
+          <a href="#" class="field facebook">
+            <i class="bx bxl-facebook facebook-icon"></i>
+            <span id="facebook">Login with Facebook</span>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="field google">
+            <img
+              src="./logo_google_g_icon.png"
+              alt="google-logo"
+              class="google-img"
+            />
+            <span id="google">Login with Google</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Signup Form en -->
+
+      <div class="form signup en" id="signUpEn" hidden>
+        <div class="form-Content">
+          <header id="signupHeader">Signup</header>
+          <div class="change-lang">
+            <img src="./israel.png" alt="langChange" class="israel-img lang" id="langChangeP1" />
+            <span class="lang" id="langChange1">עברית</span>
+          </div>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="text"
+                name="userName"
+                class="userName"
+                placeholder="User Name"
+                required
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="password"
+                required
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                name="password2"
+                class="password"
+                id="confirmPassword"
+                placeholder="Confirm password"
+                required
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <div class="field button-field">
+              <button id="signupBtnEn">Signup</button>
+            </div>
+          </form>
+          <div class="formLink">
+            <span id="ifReg">
+              Already have an Account?
+                <a href="#" class="link loginLink">Login</a>
+            </span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="social-icons">
+          <a href="#" class="field facebook">
+            <i class="bx bxl-facebook facebook-icon"></i>
+            <span id="facebook2">Login with Facebook</span>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="field google">
+            <img
+              src="./logo_google_g_icon.png"
+              alt="google-logo"
+              class="google-img"
+            />
+            <span id="google2">Login with Google</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Login Form he -->
+      
+      <div class="form login he" id="loginHe" hidden>
+        <div class="form-Content">
+          <header id="loginHeader">כניסה</header>
+          <div class="change-lang">
+            <img src="united-states-of-america.png" alt="langChange" class="israel-img lang" id="langChangeP" />
+            <span class="lang" id="langChange">en</span>
+          </div>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="text"
+                name="userName"
+                class="userName Heb"
+                placeholder="שם משתמש"
+                required
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                name="password"
+                class="password Heb"
+                placeholder="סיסמא"
+                required
+              />
+              <i class="bx bx-hide eye-iconheb"></i>
+            </div>
+            <div class="formLink">
+              <a href="#" class="forgotPassword">שכחת סיסמא?</a>
+            </div>
+            <div class="field button-field">
+              <button id="loginBtnHe">כניסה</button>
+            </div>
+          </form>
+          <div class="formLink">
+            <span id="ifNotReg">
+              אין לך חשבון?
+                <a href="#" class="link signUpLink">הרשם</a>
+            </span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="social-icons">
+          <a href="#" class="field facebook">
+            <i class="bx bxl-facebook facebook-icon"></i>
+            <span id="facebook">כניסה באמצעות פייסבוק</span>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="field google">
+            <img
+              src="./logo_google_g_icon.png"
+              alt="google-logo"
+              class="google-img"
+            />
+            <span id="google">כניסה באמצעות גוגל</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Signup Form he -->
+
+      <div class="form signup he" id="signUpHe" hidden>
+        <div class="form-Content">
+          <header id="signupHeader">הרשמה</header>
+          <div class="change-lang">
+            <img src="united-states-of-america.png" alt="langChange" class="israel-img lang" id="langChangeP1" />
+            <span class="lang" id="langChange1">en</span>
+          </div>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="text"
+                name="userName"
+                class="userName Heb"
+                placeholder="שם משתמש"
+                required
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="email"
+                name="email"
+                class="Heb"
+                placeholder="מייל"
+                required
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                name="password"
+                class="password Heb"
+                placeholder="סיסמא"
+                required
+              />
+              <i class="bx bx-hide eye-iconheb"></i>
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                name="password2"
+                class="password Heb"
+                id="inputHeb"
+                placeholder="אימות סיסמא"
+                required
+              />
+              <i class="bx bx-hide eye-iconheb"></i>
+            </div>
+            <div class="field button-field">
+              <button id="signupBtnHe">הרשמה</button>
+            </div>
+          </form>
+          <div class="formLink">
+            <span id="ifReg">
+              כבר יש לך חשבון?
+                <a href="#" class="link loginLink">כניסה</a>
+            </span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="social-icons">
+          <a href="#" class="field facebook">
+            <i class="bx bxl-facebook facebook-icon"></i>
+            <span id="facebook2">כניסה באמצעות פייסבוק</span>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="field google">
+            <img
+              src="./logo_google_g_icon.png"
+              alt="google-logo"
+              class="google-img"
+            />
+            <span id="google2">כניסה באמצעות גוגל</span>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src="./P1Login.js"></script>
+  </body>
+</html>

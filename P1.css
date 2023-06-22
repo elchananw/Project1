@@ -1,0 +1,412 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  background-color: aqua;
+  direction: rtl;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+}
+
+nav p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 24px;
+  line-height: 55px;
+  float: right;
+  padding: 0px 20px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  float: right;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 14px;
+  padding: 21px 14px;
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul li ul li a {
+  padding: 8px 12px;
+  width: 100px;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #333;
+  border-left: 1px solid #000;
+  border-right: 1px solid #666;
+}
+
+nav ul li ul li:last-child a {
+  border-radius: 4px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #666;
+}
+
+#Q2 {
+  margin-top: 30px;
+}
+#Q3 {
+  margin-top: 60px;
+}
+#Q4 {
+  margin-top: 90px;
+}
+#Q5 {
+  margin-top: 120px;
+}
+#Q6 {
+  margin-top: 150px;
+}
+#Q7 {
+  margin-top: 180px;
+}
+#Q8 {
+  margin-top: 210px;
+}
+#Q9 {
+  margin-top: 240px;
+}
+#Q10 {
+  margin-top: 270px;
+}
+#Q2_2 {
+  margin-top: 30px;
+}
+#Q3_2 {
+  margin-top: 60px;
+}
+#Q4_2 {
+  margin-top: 90px;
+}
+#Q5_2 {
+  margin-top: 120px;
+}
+#Q6_2 {
+  margin-top: 150px;
+}
+#Q7_2 {
+  margin-top: 180px;
+}
+#Q8_2 {
+  margin-top: 210px;
+}
+#Q9_2 {
+  margin-top: 240px;
+}
+#Q10_2 {
+  margin-top: 270px;
+}
+
+.question {
+  margin: 20px;
+  margin-top: 0;
+  float: right;
+}
+
+.questionNum {
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.AnswerInpt input {
+  width: 50px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+#container {
+  display: grid;
+  grid-template-areas: "asideL main asideR";
+}
+
+main {
+  grid-area: main;
+  padding: 0;
+  width: 980px;
+  height: 470px;
+  background-color: #1a1a1a;
+  align-items: center;
+  justify-content: center;
+}
+
+#exellent {
+  /* display: none; */
+  color: rgb(115, 236, 50);
+  font-size: 170px;
+  width: 750px;
+  height: 400px;
+  background: url(./fireWorks.gif);
+  background-size: 750px 400px;
+  margin-top: 40px;
+  position: relative;
+}
+#tryAgain {
+  /* display: none; */
+  color: rgb(236, 50, 50);
+  font-size: 170px;
+  width: 750px;
+  height: 400px;
+  background: url(./Crying\ Emoji\ I’m\ So\ Sad.gif);
+  background-size: 750px 400px;
+  margin-top: 40px;
+  position: relative;
+}
+
+#right {
+  grid-area: asideR;
+  padding: 20px;
+  width: 200px;
+}
+
+#left {
+  grid-area: asideL;
+  padding: 20px;
+  width: 200px;
+}
+
+footer {
+  grid-area: footer;
+  padding: 20px;
+}
+
+/* game2 */
+.container {
+  width: 980px;
+  height: 470px;
+  overflow: hidden;
+}
+.mainBox {
+  position: relative;
+  display: flex;
+}
+.mainBox div {
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  width: 90px;
+  height: 55px;
+  background-color: aqua;
+  margin: 4px;
+  padding-top: 23px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 0 5px rgb(49, 107, 107), 0 0 15px aqua, 0 0 100px aqua;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(1) {
+  background: #93f466;
+  box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
+  animation-delay: 0s;
+  animation: animate-childs-0 15s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(2) {
+  background: aqua;
+  box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
+  animation-delay: 0s;
+  animation: animate-childs-1 15s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(3) {
+  background: #93f466;
+  box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
+  animation-delay: 0s;
+  animation: animate-childs-2 15s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(4) {
+  background: aqua;
+  box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
+  animation-delay: 0s;
+  animation: animate-childs-3 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(5) {
+  background: #93f466;
+  box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
+  animation-delay: 0s;
+  animation: animate-childs-4 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(6) {
+  background: aqua;
+  box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
+  animation-delay: 0s;
+  animation: animate-childs-5 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(7) {
+  background: #93f466;
+  box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
+  animation-delay: 0s;
+  animation: animate-childs-6 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(8) {
+  background: aqua;
+  box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
+  animation-delay: 0s;
+  animation: animate-childs-7 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(9) {
+  background: #93f466;
+  box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
+  animation-delay: 0s;
+  animation: animate-childs-8 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(10) {
+  background: aqua;
+  box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
+  animation-delay: 0s;
+  animation: animate-childs-9 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(11) {
+  background: #93f466;
+  box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
+  animation-delay: 0s;
+  animation: animate-childs-10 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+.mainBox div:nth-child(12) {
+  background: aqua;
+  box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
+  animation-delay: 0s;
+  animation: animate-childs-2 20s linear infinite;
+  animation-duration: calc(250s / var(--i));
+}
+
+@keyframes animate-childs-0 {
+  0% {
+    transform: translateY(500px) translateX(-600px);
+  }
+  100% {
+    transform: translateY(-500px) translateX(600px);
+  }
+} 
+@keyframes animate-childs-1 {
+  0% {
+    transform: translateY(500px) translateX(600px);
+  }
+  100% {
+    transform: translateY(-500px) translateX(-600px);
+  }
+} 
+@keyframes animate-childs-2 {
+  0% {
+    transform: translateY(500px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-500px) translateX(-500px);
+  }
+} 
+@keyframes animate-childs-3 {
+  0% {
+    transform: translateY(600px) translateX(-500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(500px);
+  }
+} 
+@keyframes animate-childs-4 {
+  0% {
+    transform: translateY(600px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(-500px);
+  }
+} 
+@keyframes animate-childs-5 {
+  0% {
+    transform: translateY(600px) translateX(-550px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(550px);
+  }
+} 
+@keyframes animate-childs-6 {
+  0% {
+    transform: translateY(600px) translateX(-500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(500px);
+  }
+} 
+@keyframes animate-childs-7 {
+  0% {
+    transform: translateY(600px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(-500px);
+  }
+} 
+@keyframes animate-childs-8 {
+  0% {
+    transform: translateY(600px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(-500px);
+  }
+} 
+@keyframes animate-childs-9 {
+  0% {
+    transform: translateY(600px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(-500px);
+  }
+} 
+@keyframes animate-childs-10 {
+  0% {
+    transform: translateY(600px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(-500px);
+  }
+} 
+@keyframes animate-childs-11 {
+  0% {
+    transform: translateY(600px) translateX(500px);
+  }
+  100% {
+    transform: translateY(-600px) translateX(-500px);
+  }
+}
