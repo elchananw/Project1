@@ -212,7 +212,7 @@ footer {
   position: relative;
   display: flex;
 }
-.mainBox div {
+.mainBox h2 {
   color: yellow;
   font-size: 30px;
   font-weight: bold;
@@ -229,84 +229,84 @@ footer {
   animation: animate 15s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(1) {
+.mainBox h2:nth-child(1) {
   background: #93f466;
   box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
   animation-delay: 0s;
   animation: animate-childs-0 15s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(2) {
+.mainBox h2:nth-child(2) {
   background: aqua;
   box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
   animation-delay: 0s;
   animation: animate-childs-1 15s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(3) {
+.mainBox h2:nth-child(3) {
   background: #93f466;
   box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
   animation-delay: 0s;
   animation: animate-childs-2 15s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(4) {
+.mainBox h2:nth-child(4) {
   background: aqua;
   box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
   animation-delay: 0s;
   animation: animate-childs-3 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(5) {
+.mainBox h2:nth-child(5) {
   background: #93f466;
   box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
   animation-delay: 0s;
   animation: animate-childs-4 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(6) {
+.mainBox h2:nth-child(6) {
   background: aqua;
   box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
   animation-delay: 0s;
   animation: animate-childs-5 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(7) {
+.mainBox h2:nth-child(7) {
   background: #93f466;
   box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
   animation-delay: 0s;
   animation: animate-childs-6 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(8) {
+.mainBox h2:nth-child(8) {
   background: aqua;
   box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
   animation-delay: 0s;
   animation: animate-childs-7 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(9) {
+.mainBox h2:nth-child(9) {
   background: #93f466;
   box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
   animation-delay: 0s;
   animation: animate-childs-8 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(10) {
+.mainBox h2:nth-child(10) {
   background: aqua;
   box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
   animation-delay: 0s;
   animation: animate-childs-9 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(11) {
+.mainBox h2:nth-child(11) {
   background: #93f466;
   box-shadow: 0 0 0 5px #35631e, 0 0 15px #93f463, 0 0 100px #93f463;
   animation-delay: 0s;
   animation: animate-childs-10 20s linear infinite;
   animation-duration: calc(250s / var(--i));
 }
-.mainBox div:nth-child(12) {
+.mainBox h2:nth-child(12) {
   background: aqua;
   box-shadow: 0 0 0 5px #3dbde444, 0 0 15px aqua, 0 0 100px aqua;
   animation-delay: 0s;

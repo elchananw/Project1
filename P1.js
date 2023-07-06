@@ -38,40 +38,76 @@ let GamesHideShow = () => {
     }, 1500);
   } else if (rtn === 20) {
     Game1Times2.hidden = true;
-    Row.innerText = "כפולות 3";
-    Game1Times3.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 3";
+      Game1Times3.hidden = false;
+    }, 1500);
   } else if (rtn === 30) {
     Game1Times3.hidden = true;
-    Row.innerText = "כפולות 4";
-    Game1Times4.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 4";
+      Game1Times4.hidden = false;
+    }, 1500);
   } else if (rtn === 40) {
     Game1Times4.hidden = true;
-    Row.innerText = "כפולות 5";
-    Game1Times5.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 5";
+      Game1Times5.hidden = false;
+    }, 1500);
   } else if (rtn === 50) {
     Game1Times5.hidden = true;
-    Row.innerText = "כפולות 6";
-    Game1Times6.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 6";
+      Game1Times6.hidden = false;
+    }, 1500);
   } else if (rtn === 60) {
     Game1Times6.hidden = true;
-    Row.innerText = "כפולות 7";
-    Game1Times7.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 7";
+      Game1Times7.hidden = false;
+    }, 1500);
   } else if (rtn === 70) {
     Game1Times7.hidden = true;
-    Row.innerText = "כפולות 8";
-    Game1Times8.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 8";
+      Game1Times8.hidden = false;
+    }, 1500);
   } else if (rtn === 80) {
     Game1Times8.hidden = true;
-    Row.innerText = "כפולות 9";
-    Game1Times9.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 9";
+      Game1Times9.hidden = false;
+    }, 1500);
   } else if (rtn === 90) {
     Game1Times9.hidden = true;
-    Row.innerText = "כפולות 10";
-    Game1Times10.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 10";
+      Game1Times10.hidden = false;
+    }, 1500);
   } else if (rtn === 100) {
     Game1Times10.hidden = true;
-    Row.innerText = "כפולות 1";
-    Game2Times1.hidden = false;
+    exellent.style.display = "block";
+    setTimeout(() => {
+      exellent.style.display = "none";
+      Row.innerText = "כפולות 1";
+      Game2Times1.hidden = false;
+    }, 1500);
   }
 };
 
@@ -82,7 +118,7 @@ let num4 = 1;
 let rtn = 0;
 
 for (let i = 0; i < questionNum.length; i++) {
-  Game1Times1.hidden = true;
+  Game1Times1.hidden = false;
   let answer = document.querySelectorAll(`#answer${num3}_${num4}`);
   num4++;
   if (num4 > 10) {
@@ -116,12 +152,12 @@ for (let i = 0; i < questionNum.length; i++) {
   }
 }
 //Game2
-Game2Times1.hidden = false;
+// Game2Times1.hidden = false;
 function Game2HideShow() {
   if (rtnG2 === 10) {
     Game2Times2.hidden = false;
     Row.innerText = "כפולות 2";
-    Game2Times1.style.display = "none";
+    Game2Times1.hidden = true;
   }
 }
 let rtnG2 = 0;
@@ -163,11 +199,6 @@ for (let index1 = 0; index1 < randomDataHT1.length; index1++) {
   }, 5000);
   randomDataHT1[index1].addEventListener("click", () => {
     if (userAnswer === correctAnswer) {
-      // randomDataHT1[index1].textContent = "כל הכבוד!";
-      // randomDataHT1[index1].style.color = "green";
-      // randomDataHT1[index1].style.paddingTop = "2px";
-      // randomDataHT1[index1].style.width = "90px";
-      // randomDataHT1[index1].style.height = "90px";
       Game2Times1.hidden = true;
       exellent.style.display = "block";
       rtnG2++;
@@ -179,68 +210,32 @@ for (let index1 = 0; index1 < randomDataHT1.length; index1++) {
       setTimeout(() => {
         exellent.style.display = "none";
         Game2Times1.hidden = false;
-        // randomDataHT1[index1].style.paddingTop = "23px";
-        // randomDataHT1[index1].style.width = "90px";
-        // randomDataHT1[index1].style.height = "55px";
-        // randomDataHT1[index1].style.color = "yellow";
         correctAnswer = randomFromArr();
-        // console.log("c", correctAnswer);
       }, 1500);
     } else {
-      // debugger;
-      // randomDataHT1[index1].style.paddingTop = "2px";
-      // randomDataHT1[index1].style.width = "90px";
-      // randomDataHT1[index1].style.height = "90px";
-      // randomDataHT1[index1].textContent = "נסה שוב!";
-      // randomDataHT1[index1].style.color = "red";
       Game2Times1.hidden = true;
       tryAgain.style.display = "block";
       setTimeout(() => {
-        // randomDataHT1[index1].style.paddingTop = "23px";
-        // randomDataHT1[index1].style.width = "90px";
-        // randomDataHT1[index1].style.height = "55px";
-        // randomDataHT1[index1].style.color = "yellow";
         tryAgain.style.display = "none";
         Game2Times1.hidden = false;
         correctAnswer = randomFromArr();
       }, 1500);
     }
-    Game2HideShow();
+    if (rtnG2 === 10) {
+      correctAnswers.textContent = ``;
+      Game2Times2.hidden = false;
+      Row.innerText = "כפולות 2";
+      Game2Times1.hidden = true;
+    }
   });
-  
+}
 
-  // } else if (rtnG2 === 20) {
-  //   Game2Times2.hidden = true;
-  //   Row.innerText = "כפולות 3";
-  //   Game2Times3.hidden = false;
-  // } else if (rtnG2 === 30) {
-  //   Game2Times3.hidden = true;
-  //   Row.innerText = "כפולות 4";
-  //   Game2Times4.hidden = false;
-  // } else if (rtnG2 === 40) {
-  //   Game2Times4.hidden = true;
-  //   Row.innerText = "כפולות 5";
-  //   Game2Times5.hidden = false;
-  // } else if (rtnG2 === 50) {
-  //   Game2Times5.hidden = true;
-  //   Row.innerText = "כפולות 6";
-  //   Game2Times6.hidden = false;
-  // } else if (rtnG2 === 60) {
-  //   Game2Times6.hidden = true;
-  //   Row.innerText = "כפולות 7";
-  //   Game2Times7.hidden = false;
-  // } else if (rtnG2 === 70) {
-  //   Game2Times7.hidden = true;
-  //   Row.innerText = "כפולות 8";
-  //   Game2Times8.hidden = false;
-  // } else if (rtnG2 === 80) {
-  //   Game2Times8.hidden = true;
-  //   Row.innerText = "כפולות 9";
-  //   Game2Times9.hidden = false;
-  // } else if (rtnG2 === 90) {
-  //   Game2Times9.hidden = true;
-  //   Row.innerText = "כפולות 10";
-  //   Game2Times10.hidden = false;
+function Game3HideShow() {
+  if (rtnG2T2 === 10) {
+    Game2Times3.hidden = false;
+    Row.innerText = "כפולות 3";
+    Game2Times2.hidden = true;
+  }
 }
 let mathArr1 = [
   { question: "0x2", result: 0 },
@@ -279,27 +274,17 @@ for (let index = 0; index < randomDataHT2.length; index++) {
   }, 5000);
   randomDataHT2[index].addEventListener("click", () => {
     if (userAnswerT2 === correctAnswerT2) {
-      // randomDataHT1[index1].textContent = "כל הכבוד!";
-      // randomDataHT1[index1].style.color = "green";
-      // randomDataHT1[index1].style.paddingTop = "2px";
-      // randomDataHT1[index1].style.width = "90px";
-      // randomDataHT1[index1].style.height = "90px";
       Game2Times2.hidden = true;
       exellent.style.display = "block";
       rtnG2T2++;
       console.log("r", rtnG2T2);
       console.log("u", userAnswerT2);
       console.log("c", correctAnswerT2);
-
+      correctAnswers.textContent = `תשובות נכונות: ${rtnG2T2}`;
       setTimeout(() => {
         exellent.style.display = "none";
         Game2Times2.hidden = false;
-        // randomDataHT1[index1].style.paddingTop = "23px";
-        // randomDataHT1[index1].style.width = "90px";
-        // randomDataHT1[index1].style.height = "55px";
-        // randomDataHT1[index1].style.color = "yellow";
         correctAnswerT2 = randomFromArrT2();
-        // console.log("c", correctAnswer);
       }, 1500);
     } else {
       Game2Times2.hidden = true;
@@ -308,6 +293,68 @@ for (let index = 0; index < randomDataHT2.length; index++) {
         tryAgain.style.display = "none";
         Game2Times2.hidden = false;
         correctAnswerT2 = randomFromArrT2();
+      }, 1500);
+    }
+    Game3HideShow();
+  });
+}
+
+let mathArr2 = [
+  { question: "0x3", result: 0 },
+  { question: "1x3", result: 3 },
+  { question: "2x3", result: 6 },
+  { question: "3x3", result: 9 },
+  { question: "4x3", result: 12 },
+  { question: "5x3", result: 15 },
+  { question: "6x3", result: 18 },
+  { question: "7x3", result: 21 },
+  { question: "8x3", result: 24 },
+  { question: "9x3", result: 27 },
+  { question: "10x3", result: 30 },
+];
+let mathArrNum2 = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30];
+let rtnG2T3 = 0;
+function randomFromArrT3() {
+  let randomObject = mathArr2[Math.floor(Math.random() * mathArr2.length)];
+  let Question = randomObject.question;
+  let Result = randomObject.result;
+  questionG2.textContent = Question;
+  return Result;
+}
+function getRandomT3() {
+  let ranNums = mathArrNum2[Math.floor(Math.random() * mathArrNum2.length)];
+  return ranNums;
+}
+let correctAnswerT3 = randomFromArrT3();
+let randomDataHT3 = document.getElementsByClassName("randomDataHT3");
+for (let index = 0; index < randomDataHT3.length; index++) {
+  randomFromArrT3();
+  let userAnswerT3;
+  setInterval(() => {
+    randomDataHT3[index].textContent = getRandomT3();
+    userAnswerT3 = Number(randomDataHT3[index].textContent);
+  }, 5000);
+  randomDataHT3[index].addEventListener("click", () => {
+    if (userAnswerT3 === correctAnswerT3) {
+      Game2Times3.hidden = true;
+      exellent.style.display = "block";
+      rtnG2T3++;
+      console.log("r", rtnG2T3);
+      console.log("u", userAnswerT3);
+      console.log("c", correctAnswerT3);
+      correctAnswers.textContent = `תשובות נכונות: ${rtnG2T2}`;
+      setTimeout(() => {
+        exellent.style.display = "none";
+        Game2Times3.hidden = false;
+        correctAnswerT3 = randomFromArrT3();
+      }, 1500);
+    } else {
+      Game2Times3.hidden = true;
+      tryAgain.style.display = "block";
+      setTimeout(() => {
+        tryAgain.style.display = "none";
+        Game2Times3.hidden = false;
+        correctAnswerT3 = randomFromArrT3();
       }, 1500);
     }
   });
