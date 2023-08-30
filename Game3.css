@@ -1,0 +1,36 @@
+#container {
+    display: flex;
+    justify-content: center;
+    background-size: 580px, 300px;
+    width: 580px;
+
+}
+
+#mainBox {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 0;
+   
+}
+
+.miniBox {
+    background-color: white;
+    width: 50px;
+    height: 25px;
+    margin: 0;
+
+    border-color: black;
+    border-inline-color: black;
+}
+
+/* #mini1{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+     width: 50px;
+     margin: 0;
+     border-color: black;
+ }   */
+
+ 
